@@ -49,6 +49,7 @@ app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
+app.use("/api/products", require("./routes/api"));
 // // 404 handler
 // app.use("*", (req, res) => {
 //   res.status(404).json({
